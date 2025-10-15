@@ -12,7 +12,7 @@
 <body class="d-flex flex-column min-vh-100">
   <!-- Menú cargado dinámicamente -->
   <header>
-    <div id="menu-containerr"></div>
+    <div id="menu-containerrr"></div>
   </header>
 
   <main class="container my-5">
@@ -46,7 +46,7 @@
   </main>
 
   <!-- Footer cargado dinámicamente -->
-  <div id="footer-containerr"></div>
+  <div id="footer-containerrr"></div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
   <script>
@@ -54,7 +54,7 @@
     fetch('menu.html')
       .then(response => response.text())
       .then(data => {
-        document.getElementById('menu-containerr').innerHTML = data;
+        document.getElementById('menu-containerrr').innerHTML = data;
 
         // Activar modo oscuro si ya estaba encendido
         if (localStorage.getItem('darkMode') === 'on') {
@@ -75,10 +75,8 @@
     fetch('footer.html')
       .then(response => response.text())
       .then(data => {
-        document.getElementById('footer-containerr').innerHTML = data;
+        document.getElementById('footer-containerrr').innerHTML = data;
       });
   </script>
 </body>
-
 </html>
-
