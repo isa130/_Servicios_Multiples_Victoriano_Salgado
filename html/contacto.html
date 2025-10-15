@@ -48,12 +48,12 @@
 
   <script>
     // Cargar menú
-    fetch('/html/menu.html')
+    fetch('menu.html')
       .then(r => r.text())
       .then(t => document.getElementById('menu-container').innerHTML = t);
 
     // Cargar footer
-    fetch('/html/footer.html')
+    fetch('footer.html')
       .then(r => r.text())
       .then(t => document.getElementById('footer-container').innerHTML = t);
   </script>
@@ -62,3 +62,4 @@
 </body>
 
 </html>
+
