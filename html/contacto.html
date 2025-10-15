@@ -12,7 +12,7 @@
 <body class="d-flex flex-column min-vh-100">
   <!-- Menú de navegación principal (importado) -->
   <header>
-    <div id="menu-containerr"></div>
+    <div id="menu-container"></div>
   </header>
 
   <main class="container my-5">
@@ -46,13 +46,14 @@
   </main>
   
   <!-- Footer importado dinámicamente -->
-  <div id="footer-containerr"></div>
+  <div id="footer-container"></div>
   <script>
   document.addEventListener("DOMContentLoaded", function () {
-    fetch("index.html")
+    fetch("menu.html")
       .then(response => response.text())
       .then(data => {
-        document.getElementById("menu-containerr").innerHTML = data;
+        document.getElementById("menu-container").innerHTML = data;
+        document.getElementById("footer-container").innerHTML = data;
       });
   });
 </script>
@@ -60,4 +61,5 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
 
