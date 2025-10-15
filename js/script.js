@@ -15,7 +15,7 @@ function setupDarkModeToggle() {
 
 // ✅ Función para cargar menú y configurar modo oscuro
 function loadMenu() {
-  fetch('menu.html')
+  fetch('html/menu.html')
     .then(res => res.text())
     .then(html => {
       document.getElementById('menu-container').innerHTML = html;
@@ -25,7 +25,7 @@ function loadMenu() {
 
 // ✅ Función para cargar footer
 function loadFooter() {
-  fetch('footer.html')
+  fetch('html/footer.html')
     .then(res => res.text())
     .then(html => {
       const footerEl = document.getElementById('footer-container');
@@ -96,3 +96,4 @@ document.addEventListener('DOMContentLoaded', () => {
   setupCardHoverEffects();
   setupCustomCarousel();
 });
+
